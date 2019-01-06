@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class="headA">
+                    SpearZero
+                </a>
+
+                <button type="button" class="headC">
+                    <span class="fas fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="introduce.html">Introduce</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article class="profile">
+        <div class="container">
+            <div class="photo"></div>
+            <div class="text">
+                <h1>Profile</h1>
+                <p>이름 : 김창영</p>
+                <p>주소 : 강원도 원주시</p>
+                <p>생년월일 : 1992/11/16</p>
+                <p>학력 : 한국교통대학교 컴퓨터공학과(졸)</p>
+                <p>교육 : KH 정보교육원 자바 웹 개발자 양성과정</p>
+                <p>자격증 : 정보처리기사</p>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <p>김창영의 자기소개서</p>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".headC").click(function () {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

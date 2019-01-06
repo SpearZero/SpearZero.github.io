@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* 기본 색상 */
+:root {
+    --text-bright-color : #fff;
+}
+
+body {
+    margin : 0;
+    font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    color : white;
+    color : var(--text-bright-color);
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+}
+
+/* 메인은 그리드 */
+.main .container {
+    width: 100%;    
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/* 타이핑 효과 */
+.main .intro {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid;
+    width : 100%;
+    animation: typing 2s steps(27, end),  cursor-blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.main .next {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.main h1 {
+    font-size: 10vw;
+}
+
+@media (min-width : 768px) {
+    .main h1 {
+        font-size: 80px;
+    }
+}
+
+.main .next a {
+    text-decoration: none;
+    color : inherit;
+}
+
+.main .next a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
