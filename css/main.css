@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+html {
+     height:100%;
+}
+
+body{ 
+    min-height:100%; 
+    padding:0; 
+    margin:0; 
+    position:relative; 
+}
+
+body::after{ 
+    content:''; 
+    display:block; 
+    height:100px; 
+}
+
 :root {
     --main-color : #7FFAFF;
     --accent-color : #FF99DB;
@@ -156,6 +173,14 @@ header .headA {
     padding : 20px;
 }
 
+footer {
+    bottom : 0;
+    position: absolute;
+    width : 100%;
+    text-align: center;
+    border-top: solid 1px var(--gray-color);
+}
+
 @media (min-width : 768px) {
     .profile .container {
         display: flex;
@@ -169,13 +194,4 @@ header .headA {
         flex : 2;
         padding : 50px;
     }
-}
-
-footer {
-    left : 0;
-    bottom : 0;
-    position: fixed;
-    width : 100%;
-    text-align: center;
-    border-top: solid 1px var(--gray-color);
 }
