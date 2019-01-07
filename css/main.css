@@ -207,6 +207,14 @@ header .headA {
     font-family: 'Nanum Gothic', sans-serif; 
 }
 
+.itso .container {
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+
 .minigames h1 {
     padding-left: 0.5rem;
     border-left: solid 0.75rem #BF6A7A;
@@ -225,12 +233,26 @@ header .headA {
     margin-bottom : 10px;
 }
 
+.itso h1 {
+    padding-left: 0.5rem;
+    border-left: solid 0.75rem #BF6A7A;
+    border-left: solid 0.75rem var(--accent-color);
+    font-size: 2rem;
+    margin-top : 0;
+    margin-bottom : 10px;
+}
+
 .minigames .info {
     background-color: rgba(255,255,255,0.9);
     border-bottom: solid 1px var(--gray-color);
 }
 
 .travelmaker .info {
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: solid 1px var(--gray-color);
+}
+
+.itso .info {
     background-color: rgba(255,255,255,0.9);
     border-bottom: solid 1px var(--gray-color);
 }
@@ -264,6 +286,23 @@ header .headA {
 
 @media (max-width : 768px) {
     .travelmaker .make img {
+        width : 100%;
+        height: auto;
+    }
+}
+
+.itso .make {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.itso .make img {
+    width : 45%;
+    height: auto;
+}
+
+@media (max-width : 768px) {
+    .itso .make img {
         width : 100%;
         height: auto;
     }

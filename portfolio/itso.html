@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minigames</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="/" class="headA">
+                    SpearZero
+                </a>
+
+                <button type="button" class="headC">
+                    <span class="fas fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="/profile.html">Profile</a></li>
+                    <li><a href="/introduce.html">Introduce</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article class="itso">
+        <div class="container">
+            <h1>ITSO</h1>
+            <div class="info">
+                <h4>프로젝트 이름 : ITSO</h4>
+                <h4>프로젝트 기간 : 2018-08-01 ~ 2018-09-04</h4>
+                <h4>사용 기술 : HTML5, CSS3, JavaScript, jQuery, Bootstrap, Java, Spring, Mybatis, Oracle</h4>
+                <h4>버전 관리 : GitKraken, GitHub / WAS : Apache Tomcat</h4>
+                <h4>개발 목표 : 패션에 관심있는 사람들을 위한 패션 공유 사이트 제작</h4>
+            </div>
+            <div class="make">
+                <img src="../img/i-tag.jpg" alt="">
+                <img src="../img/i-read.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>태그입력</h4>
+                <p>알려주고 싶은 의류 정보에 태그를 표시하면 글 조회시 태그에 입력된 정보를 볼 수 있다.</p>
+            </div>
+            <div class="make">
+                <img src="../img/i-name1.jpg" alt="">
+                <img src="../img/i-name2.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>의류정보 공유</h4>
+                <p>마음에 드는 의류명을 클릭하면 그 이름과 일치하는 태그들을 포함한 게시물을 보여준다.</p>
+            </div>
+            <div class="make">
+                <img src="../img/i-hashclick1.jpg" alt="">
+                <img src="../img/i-hashclick2.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>해시태그</h4>
+                <p>해시태그를 클릭하면 해시태그가 일치하는 글들을 보여준다.</p>
+            </div>
+            <div class="make">
+                <img src="../img/i-comment.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>댓글</h4>
+                <p>전과달리 Ajax통신으로 댓글을 달아 페이지 재로딩이 없이 댓글이 표시된다.</p>
+            </div>
+            <div class="make">
+                <img src="../img/i-search1.jpg" alt="">
+                <img src="../img/i-search2.png" alt="">
+            </div>
+            <div class="description">
+                <h4>검색</h4>
+                <p>검색어를 입력하면 사용자의 상태 정보 및 태그, 컬렉션, 웹 게시글, 브랜드 명 등이 검색된다.</p>
+            </div>
+            <div class="description">
+                <h4>후기</h4>
+                <p>스프링 교육을 빨리 끝내고 시작한 프로젝트여서 그런지 스프링의 기술들을 잘 이해하지 못하고 활용하지 못한거 같다.
+                   팀원들이 서로 각자 맡은 부분을 구현하다 보니 다른 팀원들이 사용한 기술들을 사용하지 못한게 아쉬웠다. 항상 느끼는 거였지만
+                   문법 공부만 한다고 실력이 느는 것이 아니라 무언가 프로그램을 만들어 봐야 실력이 느는것 같다. 이 프로젝트 이후로 학원은 종강하게 되었다.
+                   6개월동안 많은 것을 배우기에는 부족한 시간이였지만
+                   자신감이 없던 내가 자신감을 가지고 공부를 할 수 있는 계기를 주었던 것 같다.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <p>김창영의 자기소개서</p>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".headC").click(function () {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
