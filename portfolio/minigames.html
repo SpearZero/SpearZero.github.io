@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minigames</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="/" class="headA">
+                    SpearZero
+                </a>
+
+                <button type="button" class="headC">
+                    <span class="fas fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="/profile.html">Profile</a></li>
+                    <li><a href="/introduce.html">Introduce</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article class="minigames">
+        <div class="container">
+            <h1>MiniGames</h1>
+            <div class="info">
+                <h4>프로젝트 이름 : Mini Games</h4>
+                <h4>프로젝트 기간 : 2018-04-07 ~ 2018-04-15</h4>
+                <h4>개발 언어 : Java</h4>
+                <h4>개발 목표 : 누구나 한번 쯤 해봤을만한 고전게임처럼 단순하고 중독성 있는 게임들을 모아놓은 프로그램 만들기</h4>
+            </div>
+            <div class="make">
+                <div class="photo photo1"></div>
+                <div class="photo photo2"></div>
+            </div>
+            <div class="description">
+                <h4>(분담한 부분)폭탄 피하기 / 닷지</h4>
+                <p>떨어지는 폭탄을 피하고나 공격을 피하는 게임이다. 주로 사용한 기술은 Swing과 Thread이다.</p>
+                <h4>처음으로 팀 프로젝트 + 자바 프로그램을 만들다.</h4>
+                <p>
+                    매번 책에 있는 예제를 따라치거나 과제를 제출했기 때문에 자바로 제대로 된 프로그램을 만든 적이 없었다. 또한 
+                    학교에 다닐때 이론과목을 제외하고 프로그래밍 과목에서 제대로된 팀 프로젝트를 한 적이 없었다. 처음으로 이 프로젝트를 시작했을때
+                    과연 내가 다른 사람들과 소통하여 프로그램들을 만들 수 있을까 걱정부터 했던 것 같다. 하지만 프로젝트를 진행하고 무사히 프로그램을 완성했을 때는
+                    나도 다른사람과 의견을 교환하며 프로그램을 만들 수 있구나 하는 자신감을 얻었던 것 같다.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <p>김창영의 자기소개서</p>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".headC").click(function () {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

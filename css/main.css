@@ -191,6 +191,58 @@ header .headA {
     margin-bottom : 10px;
 }
 
+.minigames .container {
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.minigames h1 {
+    padding-left: 0.5rem;
+    border-left: solid 0.75rem #BF6A7A;
+    border-left: solid 0.75rem var(--accent-color);
+    font-size: 2rem;
+    margin-top : 0;
+    margin-bottom : 10px;
+}
+
+.minigames .info {
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: solid 1px var(--gray-color);
+}
+
+.minigames .photo1 {
+    min-height: 380px;
+    background-image: url("../img/avoidBomb.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top : 10px;
+}
+
+.minigames .photo2 {
+    min-height: 380px;
+    background-image: url("../img/dodge.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+@media (min-width : 768px) {
+    .minigames .make {
+        display: flex;
+    }
+
+    .minigames .photo {
+        flex : 1;
+    }
+
+    .photo:first-child {
+        margin-right: 10px;
+    }
+}
+
 footer {
     bottom : 0;
     position: absolute;
@@ -225,7 +277,7 @@ footer {
 }
 
 .list article {
-    flex : 1 1 400px;
+    flex : 1 1 200px;
     display: flex;
 }
 
