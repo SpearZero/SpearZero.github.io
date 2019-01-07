@@ -151,6 +151,7 @@ header .headA {
     max-width: var(--large-width);
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .profile h1 {
@@ -171,6 +172,23 @@ header .headA {
 
 .profile .text {
     padding : 20px;
+}
+
+.introduce .container {
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.introduce h1 {
+    padding-left: 0.5rem;
+    border-left: solid 0.75rem #BF6A7A;
+    border-left: solid 0.75rem var(--accent-color);
+    font-size: 2rem;
+    margin-top : 0;
+    margin-bottom : 10px;
 }
 
 footer {
@@ -194,4 +212,48 @@ footer {
         flex : 2;
         padding : 50px;
     }
+}
+
+.list .container {
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin : 30px auto; 
+}
+
+.list article {
+    flex : 1 1 400px;
+    display: flex;
+}
+
+.list {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.list .photo {
+    min-height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 포트폴리오 목록 */
+.list a {
+    flex: 1;
+    margin : 10px;
+    display: block;
+    border : solid 1px #ddd;
+    border : solid 1px var(--gray-color);
+    color : inherit;
+    text-decoration: none;
+}
+
+.list a:hover {
+    opacity: 0.8;
+}
+
+.list .text {
+    margin : 10px;
 }
