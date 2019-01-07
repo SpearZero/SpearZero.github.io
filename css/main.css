@@ -165,7 +165,7 @@ header .headA {
 
 .profile .photo {
     min-height: 200px;
-    background-image: url("../img/cat.jpg");
+    background-image: url("../img/hello.jpg");
     background-position: center;
     background-size: cover;
 }
