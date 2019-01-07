@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minigames</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="/" class="headA">
+                    SpearZero
+                </a>
+
+                <button type="button" class="headC">
+                    <span class="fas fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="/profile.html">Profile</a></li>
+                    <li><a href="/introduce.html">Introduce</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article class="travelmaker">
+        <div class="container">
+            <h1>TravelMaker</h1>
+            <div class="info">
+                <h4>프로젝트 이름 : TravelMaker</h4>
+                <h4>프로젝트 기간 : 2018-06-25 ~ 2018-07-06</h4>
+                <h4>사용 기술 : HTML5, CSS3, JavaScript, jQuery, Bootstrap, Java, JSP&Servlet, Oracle / 버전 관리 : GitKraken, GitHub
+                <h4>개발 목표 : 여행자들을 위한 여행 계획 및 여행 후기 공유 사이트 구축</h4>
+            </div>
+            <div class="make">
+                <img src="../img/tm-w.jpg" alt="">
+                <img src="../img/tm-ud.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>글쓰기 / 글수정 / 글삭제</h4>
+                <p>글쓰기는 위지윅에디터인 summernote를 사용했다. 글 작성자는 글 수정이나 글 삭제를 할 수 있다.</p>
+            </div>
+            <div class="make">
+                <img src="../img/tm-comment.jpg" alt="">
+                <img src="../img/tm-thumbnail.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>댓글 / 신고 / 섬네일 이미지</h4>
+                <p>댓글은 회원가입을 한 사람이 달 수 있다.
+                   댓글로 인한 스크립트 공격을 막기 위해 필터를 적용하였다. 신고는 한 사용자가 한 게시물당 한번만 가능하다.
+                   섬네일 이미지는 게시글의 첫 번째 이미지가 사용되도록 구성했다.
+                </p>
+            </div>
+            <div class="make">
+                <img src="../img/tm-lc.jpg" alt="">
+                <img src="../img/tm-lm.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>지역 검색 및 지도 표시</h4>
+                <p>
+                    여행계획 작성을 위한 검색 및 지도이다. 글 작성자는 자기가 방문하고자 하는 지역을 선택한다.
+                    검색으로 선택한 지역은 일정과 지도에 표시된다. 네이버 검색 API와 지도 API를 사용하였다.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <p>김창영의 자기소개서</p>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".headC").click(function () {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
