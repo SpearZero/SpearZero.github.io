@@ -152,6 +152,7 @@ header .headA {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 25px;
 }
 
 .profile h1 {
@@ -172,6 +173,60 @@ header .headA {
 
 .profile .text {
     padding : 20px;
+}
+
+.listS .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin : 30px auto;
+    flex: 1 1 300px;
+}
+
+.listS h1 {
+    flex : 1 1 1000px;
+    margin : 10px;
+    padding-left: 0.5rem;
+    border-left: solid 0.75rem #BF6A7A;
+    border-left: solid 0.75rem var(--accent-color);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 2rem;
+    margin-top : 0;
+    margin-bottom : 10px;
+}
+
+.listS article {
+    flex : 1 1 300px;
+    display: flex;
+    border : solid 1px #ddd;
+    border : solid 1px var(--gray-color);
+    color : inherit;
+    text-decoration: none;
+    margin : 10px;
+}
+
+.listS .photo {
+    flex : 2;
+    min-height: 0;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.listS img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.listS .text {
+    flex : 3;
+    margin : 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduce .container {
